@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<!-- Developed by Eli Goldman :) -->
+		
+		<title>FitWell</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<link rel="icon" type="image/x-icon" href="media/favicon.png">
+		
+		<script src="sidebarmenu.js"></script> 
+		
+	</head>
+	
+	<body>
+	
+		<!-- BEGIN SIDEBAR -->
+	
+		<div id="sidebarMenu" class="sidebar">
+		  
+			<img src="media/close.png" class="close_button" onclick="closeSidebar()">
+		  
+			<button onclick="window.location.href = 'schedules.html';">Class Schedules</button>
+		  
+			<button onclick="window.location.href = 'profiles.html';">Trainer Profiles</button>
+		
+			<button onclick="window.location.href = 'booking.html';">Book With Us!</button>
+		
+			<div class="sidebar_textbox">
+			
+				<p><strong>Address</strong> <br> <br> 9572 White Dr. <br> Baltimore, MD 21206</p>
+				
+			</div>
+			
+			<div class="sidebar_textbox">
+			
+				<p><strong>Contact Us</strong> <br> <br> +1(123)456-7890 <br>contact@fitwell.com</p>
+				
+			</div>
+		
+		</div>
+	
+		<!-- END SIDEBAR -->
+		
+		<div class="banner">
+		
+			<a href="index.html"><img src="media/fitwell-logo.png"></a>
+			
+		</div>
+	
+		<div class="main_body">
+		
+			<img src="media/menu.png" style="height:50px;width:50px;cursor:pointer;" onclick="openSidebar()">
+			
+			<div class="main_content"> <!-- Header -->
+			
+				<h1>Staff Profiles</h1>
+			
+			</div>
+			
+			<!-- Each "main_content" div ahead is a specific trainer's profile -->
+			
+			<div class="main_content clearfix"> 
+			
+				<!-- Summer Grant -->
+				
+				<img class="profile_image_left" src="media/profiles/summer-grant.png">
+				
+				<h2>Summer Grant</h2>
+				
+				<h3>Personal Trainer</h3>
+				
+				<p>Summer brings a high-energy, no-excuses attitude to every training session. With certifications in strength training, functional fitness, and corrective exercise, she’s all about creating customized plans to help her clients crush their goals. Whether you’re looking to lose weight, build muscle, or boost endurance, Summer’s supportive coaching style and knack for motivation will keep you on track. Outside of the gym, you’ll find her hiking, experimenting with new smoothie recipes, or cheering on the Baltimore Ravens.</p>
+				
+				<a href="booking.html">Click here to book with Summer!</a>
+			
+			</div>
+			
+			<!-- Daniel Porter -->
+			
+			<div class="main_content clearfix">
+			
+				<img class="profile_image_right" src="media/profiles/daniel-porter.png">
+				
+				<h2>Daniel Porter</h2>
+				
+				<h3>Group Fitness Coordinator</h3>
+				
+				<p>Daniel is the heart of FitWell’s group fitness programs. With over 8 years of experience leading classes like HIIT, spin, and dance cardio, his dynamic teaching style ensures every session is as fun as it is effective. Daniel specializes in designing workouts that challenge all fitness levels, making everyone feel included and inspired. When he’s not organizing the next big class event, he’s likely planning his next adventure, exploring local coffee shops, or training for his next triathlon.</p>
+			
+			</div>
+			
+			<!-- Emily Sawyer -->
+			
+			<div class="main_content clearfix">
+			
+				<img class="profile_image_left" src="media/profiles/emily-sawyer.jpg">
+				
+				<h2>Emily Sawyer</h2>
+				
+				<h3>Yoga Instructor</h3>
+				
+				<p>Emily’s mission is to help her clients find balance—both on and off the mat. Certified in Hatha, Vinyasa, and restorative yoga, she tailors her classes to focus on flexibility, mindfulness, and stress relief. Emily believes yoga is for everyone and strives to create a welcoming environment for beginners and seasoned yogis alike. When she’s not teaching, you’ll find her enjoying nature, reading poetry, or perfecting her homebrewed coffee.</p>
+			
+			</div>
+			
+		</div>
+	
+	</body>
+	
+</html>

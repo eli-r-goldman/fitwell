@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<!-- Developed by Eli Goldman :) -->
+		
+		<title>FitWell</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<link rel="icon" type="image/x-icon" href="media/favicon.png">
+		
+		<script src="sidebarmenu.js"></script> 
+		
+	</head>
+	
+	<body>
+	
+		<!-- BEGIN SIDEBAR -->
+	
+		<div id="sidebarMenu" class="sidebar">
+		  
+			<img src="media/close.png" class="close_button" onclick="closeSidebar()">
+		  
+			<button onclick="window.location.href = 'schedules.html';">Class Schedules</button>
+		  
+			<button onclick="window.location.href = 'profiles.html';">Trainer Profiles</button>
+		
+			<button onclick="window.location.href = 'booking.html';">Book With Us!</button>
+		
+			<div class="sidebar_textbox">
+			
+				<p><strong>Address</strong> <br> <br> 9572 White Dr. <br> Baltimore, MD 21206</p>
+				
+			</div>
+			
+			<div class="sidebar_textbox">
+			
+				<p><strong>Contact Us</strong> <br> <br> +1(123)456-7890 <br>contact@fitwell.com</p>
+				
+			</div>
+		
+		</div>
+	
+		<!-- END SIDEBAR -->
+		
+		<div class="banner">
+		
+			<a href="index.html"><img src="media/fitwell-logo.png"></a>
+			
+		</div>
+	
+		<div class="main_body">
+		
+			<img src="media/menu.png" style="height:50px;width:50px;cursor:pointer;" onclick="openSidebar()">
+			
+			<div class="main_content">
+			
+				<form class="booking_form">
+				
+					<h2>Basic Information</h2>
+				
+					<label for="First_Name">First Name</label>
+					<input type="text" id="First_Name">
+					
+					<label for="Last_Name">Last Name</label>
+					<input type="text" id="Last_Name">
+					
+					<label for="Email">Email</label>
+					<input type="email" id="Email">
+					
+					<label for="Phone_Number">Phone Number</label>
+					<input type="tel" id="Phone_Number">
+				
+					<h2>Booking Details</h2>
+					
+					<!-- Selection for type of service -->
+					<label for="Service_Type">Service Type</label>
+					<select id="Service_Type">
+						<option value="default">Select service type</option>
+						<option value="personal_training">Personal Training</option>
+						<option value="group_fitness">Group Fitness</option>
+						<option value="yoga_session">Yoga Session</option>
+						<option value="nutrition_coaching">Nutrition Coaching</option>
+					</select>
+					
+					<!-- Selection for staff member -->
+					<label for="Staff_Preference">Trainer/Instructor Preference</label>
+					<select id="Staff_Preference">
+						<option value="default">Select trainer/instructor</option>
+						<option value="s_grant">Summer Grant</option>
+						<option value="d_porter">Daniel Porter</option>
+						<option value="e_sawyer">Emily Sawyer</option>
+						<option value="any_staff">Any Available Staff</option>
+					</select>
+					
+					<label for="Date">Date and Time Preference</label>
+					<input type="datetime-local" id="Date">
+					
+					<label for="30min"> 30 Minutes <input type="checkbox" id="30min" value="30_min"></label> <!-- Input inside of label so that it will format (somewhat) correctly within the form flexbox -->
+					
+					<label for="60min"> 60 Minutes <input type="checkbox" id="60min" value="60_min"></label>
+					
+					
+					<h2>Goals and Requests</h2>
+					
+					<label for="Goals">What are your fitness goals?</label>
+					<textarea id="Goals"></textarea>
+					
+					<label for="Precautions">Do you have any injuries or conditions we should know about?</label>
+					<textarea id="Precautions"></textarea>
+					
+					<label for="Requests">Special Requests or Additional Notes</label>
+					<textarea id="Requests"></textarea>
+					
+					<h2>Confirmation</h2>
+					
+					<input type="submit" value="Submit">
+			
+					<input type="reset" value="Reset">
+				
+				</form>
+			
+			</div>
+			
+		</div>
+	
+	</body>
+	
+</html>

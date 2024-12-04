@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<!-- Developed by Eli Goldman :) -->
+		
+		<title>FitWell</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<link rel="icon" type="image/x-icon" href="media/favicon.png">
+		
+		<script src="sidebarmenu.js"></script> 
+		
+	</head>
+	
+	<body>
+	
+		<!-- BEGIN SIDEBAR -->
+	
+		<div id="sidebarMenu" class="sidebar">
+		  
+			<img src="media/close.png" class="close_button" onclick="closeSidebar()">
+		  
+			<button onclick="window.location.href = 'schedules.html';">Class Schedules</button>
+		  
+			<button onclick="window.location.href = 'profiles.html';">Trainer Profiles</button>
+		
+			<button onclick="window.location.href = 'booking.html';">Book With Us!</button>
+		
+			<div class="sidebar_textbox">
+			
+				<p><strong>Address</strong> <br> <br> 9572 White Dr. <br> Baltimore, MD 21206</p> <!-- Random fake address -->
+				
+			</div>
+			
+			<div class="sidebar_textbox">
+			
+				<p><strong>Contact Us</strong> <br> <br> +1(123)456-7890 <br>contact@fitwell.com</p>
+				
+			</div>
+		
+		</div>
+	
+		<!-- END SIDEBAR -->
+		
+		<div class="banner">
+		
+			<a href="index.html"><img src="media/fitwell-logo.png"></a> <!-- Clickable logo that brings you back to index.html -->
+			
+		</div>
+	
+		<div class="main_body">
+		
+			<img src="media/menu.png" style="height:50px;width:50px;cursor:pointer;" onclick="openSidebar()"> <!-- Lined menu in upper left corner--expands sidebar via Javascript -->
+			
+			<div class="main_content clearfix">
+			
+				<h1>Live Well. FitWell.</h1>
+				
+				<img src="media/facilities.jpg" style="float:right;width:30%;height:auto;">
+				
+				<p>At FitWell, we believe in living life to the fullest by nurturing both body and mind. With our state-of-the-art gym facilities, diverse classes, and expert personal trainers, we’re here to help you achieve your fitness goals—your way. From energizing group workouts to personalized training plans, we provide the tools and support you need to feel your best. <br> <br> Join our community and discover why we say: <strong>Live Well. FitWell.</strong></p>
+			
+			</div>
+			
+		</div>
+	
+	</body>
+	
+</html>
