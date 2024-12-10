@@ -24,6 +24,9 @@ h3 {
 	font-family: antonio, Helvetica, sans-serif;
 }
 
+h4 {
+	font-family: antonio, Helvetica, sans-serif;
+}
 
 .main_content h1 {
 	text-align: center;
@@ -43,10 +46,11 @@ a {
 	color: #ffa4ac;
 	text-decoration: none;
 	font-style: italic;
+	font-family: computer-modern, Helvetica, sans-serif;
 }
 
 a:hover {
-	color: #ffd9dc;
+	color: #white;
 }
 
 a:visited {
@@ -60,24 +64,102 @@ input:focus, textarea:focus { /* Change background on selected inputs on booking
 /* Image styles */
 
 .profile_image_left { /* Aligns a staff member's profile picture to the left */
-	width: 33%;
-	height: auto;
+	display: block;
+	width: 25%;
+	max-height: 25%;
+	transition: width 1.2s, height 1.2s;
 	float: left;
 	margin-right: 15px;
+	border-width: 5px;
+	border: 3px solid white;
+}
+
+.profile_image_left:hover {
+	width: 50%;
+	height: auto;
+	max-height: 100%;
 }
 
 .profile_image_right { /* Aligns a staff member's profile picture to the right */
-	width: 33%;
-	height: auto;
+	display: block;
+	width: 25%;
+	max-height: 25%;
+	transition: width 1.2s, height 1.2s;
 	float: right;
 	margin-left: 15px;
+	border-width: 5px;
+	border: 3px solid white;
+}
+
+.profile_image_right:hover {
+	width: 50%;
+	height: auto;
+	max-height: 100%;
+}
+
+.image_left {
+	display: block;
+	width: 25%;
+	max-height: 25%;
+	transition: width 1.2s, height 1.2s;
+	float: left;
+	margin-right: 15px;
+	border-width: 5px;
+	border: 3px solid white;
+}
+
+.image_left:hover {
+	width: 50%;
+	height: auto;
+	max-height: 100%;
+}
+
+.image_right {
+	display: block;
+	width: 25%;
+	max-height: 25%;
+	transition: width 1.2s, height 1.2s;
+	float: right;
+	margin-left: 15px;
+	border-width: 5px;
+	border: 3px solid white;
+}
+
+.image_right:hover {
+	width: 50%;
+	height: auto;
+	max-height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+		.profile_image_left {
+			width: 100%;
+			height: auto;
+		}
+		
+		.profile_image_right {
+			width: 100%;
+			height: auto;
+		}
+		
+		.image_left {
+			width: 100%;
+			height: auto;
+		}
+		
+		.image_right {
+			width: 100%;
+			height: auto;
+		}
 }
 
 .menu_button {
-	height:50px;
-	width:50px;
-	cursor:pointer;
-	position:fixed;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	position: fixed;
+	margin-top: 15px;
+	margin-left: 5px;
 }
 
 /* Div styles */
@@ -181,6 +263,84 @@ input:focus, textarea:focus { /* Change background on selected inputs on booking
 	cursor: pointer;
 }
 
+/* Table styles */
+
+.tablecontainer {
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: auto;
+	height: auto;
+	padding: 5px;
+ }
+
+table {
+	background-color: white;
+	border: 3px solid #878787;
+	margin: auto;
+	margin-bottom: 15px;
+	color: black;
+	font-family: computer-modern;
+	width: 90%;
+	padding: 0;
+	font-weight: bold;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #ffd9dc;
+	font-family: antonio;
+	font-size: 1.25em;
+	width: auto;
+}
+
+.darkheader {
+	background-color: #eb9198;
+}
+
+.lightday {
+	background-color: #ebebeb;
+}
+
+.darkday {
+	background-color: #cccccc;
+}
+
+td {
+	text-align: center;
+	vertical-align: center;
+	line-height: 3em;
+	transition: background-color 0.25s linear;
+}
+
+td:hover {
+	background-color: #dbdbdb;
+}
+
+@media only screen and (max-width: 950px) {
+	
+	.tablecontainer {
+		height: 500px;
+	}
+	
+	table {
+		width: 100%;
+		font-size: 0.75em;
+		display: block;
+		overflow-y: scroll;
+		white-space: nowrap;
+		height: auto;
+	}
+	
+	th {
+		
+	}
+	
+	td {
+		height: 90px;
+	}
+} 
+
+
 /* Misc. styles */
 
 html {
@@ -242,4 +402,60 @@ input[type=reset] {
 
 input[type=reset]:hover {
 	background-color: #bdbdbd;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip_bottom {
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* Tooltip text */
+.tooltip_bottom .tooltiptext_bottom {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip_bottom:hover .tooltiptext_bottom {
+  visibility: visible;
 }
